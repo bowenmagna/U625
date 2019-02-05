@@ -282,6 +282,10 @@ Namespace UI.Views.Calibration
             End If
         End Function
 
+        Private Sub TesterDevicesUserControl1_Load(sender As Object, e As EventArgs) Handles TesterDevicesUserControl1.Load
+
+        End Sub
+
 #End Region
 
     End Class

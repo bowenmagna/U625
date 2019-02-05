@@ -28,11 +28,12 @@
             Me.BtnColorTriggerGalaxy = New System.Windows.Forms.Button()
             Me.Label4 = New System.Windows.Forms.Label()
             Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-            Me.BtnNestOpen = New System.Windows.Forms.Button()
             Me.Label7 = New System.Windows.Forms.Label()
             Me.Label8 = New System.Windows.Forms.Label()
-            Me.BtnGi = New System.Windows.Forms.Button()
             Me.Label9 = New System.Windows.Forms.Label()
+            Me.BtnNestOpen = New System.Windows.Forms.Button()
+            Me.BtnNestCls = New System.Windows.Forms.Button()
+            Me.BtnGi = New System.Windows.Forms.Button()
             Me.ChkGlassVacuum = New System.Windows.Forms.CheckBox()
             Me.TlpButtons = New System.Windows.Forms.TableLayoutPanel()
             Me.Label10 = New System.Windows.Forms.Label()
@@ -43,7 +44,8 @@
             Me.Label3 = New System.Windows.Forms.Label()
             Me.GroupBox4 = New System.Windows.Forms.GroupBox()
             Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
-            Me.BtnJoyStickExtend = New System.Windows.Forms.Button()
+            Me.BtnLocksRet = New System.Windows.Forms.Button()
+            Me.BtnLocksExtend = New System.Windows.Forms.Button()
             Me.Label6 = New System.Windows.Forms.Label()
             Me.GroupBox1 = New System.Windows.Forms.GroupBox()
             Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
@@ -56,7 +58,6 @@
             Me.BtnVacCylDown = New System.Windows.Forms.Button()
             Me.BtnClampDown = New System.Windows.Forms.Button()
             Me.BtnClampUp = New System.Windows.Forms.Button()
-            Me.BtnNestCls = New System.Windows.Forms.Button()
             Me.TableLayoutPanel1.SuspendLayout()
             Me.TlpButtons.SuspendLayout()
             Me.GroupBox2.SuspendLayout()
@@ -129,21 +130,6 @@
             Me.TableLayoutPanel1.Size = New System.Drawing.Size(437, 165)
             Me.TableLayoutPanel1.TabIndex = 2
             '
-            'BtnNestOpen
-            '
-            Me.BtnNestOpen.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-            Me.BtnNestOpen.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-            Me.BtnNestOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-            Me.BtnNestOpen.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.BtnNestOpen.Location = New System.Drawing.Point(148, 113)
-            Me.BtnNestOpen.Name = "BtnNestOpen"
-            Me.BtnNestOpen.Size = New System.Drawing.Size(139, 49)
-            Me.BtnNestOpen.TabIndex = 30
-            Me.BtnNestOpen.Text = "Open"
-            Me.BtnNestOpen.UseVisualStyleBackColor = True
-            '
             'Label7
             '
             Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -164,6 +150,46 @@
             Me.Label8.TabIndex = 24
             Me.Label8.Text = "Color Trigger"
             '
+            'Label9
+            '
+            Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Me.Label9.AutoSize = True
+            Me.Label9.Location = New System.Drawing.Point(3, 128)
+            Me.Label9.Name = "Label9"
+            Me.Label9.Size = New System.Drawing.Size(139, 18)
+            Me.Label9.TabIndex = 28
+            Me.Label9.Text = "Nesting:"
+            '
+            'BtnNestOpen
+            '
+            Me.BtnNestOpen.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Me.BtnNestOpen.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+            Me.BtnNestOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+            Me.BtnNestOpen.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.BtnNestOpen.Location = New System.Drawing.Point(148, 113)
+            Me.BtnNestOpen.Name = "BtnNestOpen"
+            Me.BtnNestOpen.Size = New System.Drawing.Size(139, 49)
+            Me.BtnNestOpen.TabIndex = 30
+            Me.BtnNestOpen.Text = "Open"
+            Me.BtnNestOpen.UseVisualStyleBackColor = True
+            '
+            'BtnNestCls
+            '
+            Me.BtnNestCls.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Me.BtnNestCls.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+            Me.BtnNestCls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+            Me.BtnNestCls.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.BtnNestCls.Location = New System.Drawing.Point(293, 113)
+            Me.BtnNestCls.Name = "BtnNestCls"
+            Me.BtnNestCls.Size = New System.Drawing.Size(141, 49)
+            Me.BtnNestCls.TabIndex = 31
+            Me.BtnNestCls.Text = "Closed"
+            Me.BtnNestCls.UseVisualStyleBackColor = True
+            '
             'BtnGi
             '
             Me.BtnGi.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -178,16 +204,6 @@
             Me.BtnGi.TabIndex = 25
             Me.BtnGi.Text = "Extend"
             Me.BtnGi.UseVisualStyleBackColor = True
-            '
-            'Label9
-            '
-            Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-            Me.Label9.AutoSize = True
-            Me.Label9.Location = New System.Drawing.Point(3, 128)
-            Me.Label9.Name = "Label9"
-            Me.Label9.Size = New System.Drawing.Size(139, 18)
-            Me.Label9.TabIndex = 28
-            Me.Label9.Text = "Nesting:"
             '
             'ChkGlassVacuum
             '
@@ -298,11 +314,11 @@
             '
             Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Label3.AutoSize = True
-            Me.Label3.Location = New System.Drawing.Point(3, 35)
+            Me.Label3.Location = New System.Drawing.Point(3, 26)
             Me.Label3.Name = "Label3"
-            Me.Label3.Size = New System.Drawing.Size(139, 18)
+            Me.Label3.Size = New System.Drawing.Size(139, 36)
             Me.Label3.TabIndex = 24
-            Me.Label3.Text = "Trap Door Actuate"
+            Me.Label3.Text = "Trap Door / TS Check Actuate"
             '
             'GroupBox4
             '
@@ -315,17 +331,19 @@
             Me.GroupBox4.Size = New System.Drawing.Size(443, 112)
             Me.GroupBox4.TabIndex = 7
             Me.GroupBox4.TabStop = False
-            Me.GroupBox4.Text = "Joy Stick"
+            Me.GroupBox4.Text = "Part Lock"
             Me.GroupBox4.Visible = False
             '
             'TableLayoutPanel4
             '
             Me.TableLayoutPanel4.AutoSize = True
             Me.TableLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-            Me.TableLayoutPanel4.ColumnCount = 2
-            Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33553!))
-            Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66447!))
-            Me.TableLayoutPanel4.Controls.Add(Me.BtnJoyStickExtend, 0, 0)
+            Me.TableLayoutPanel4.ColumnCount = 3
+            Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33702!))
+            Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33149!))
+            Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33149!))
+            Me.TableLayoutPanel4.Controls.Add(Me.BtnLocksRet, 0, 0)
+            Me.TableLayoutPanel4.Controls.Add(Me.BtnLocksExtend, 0, 0)
             Me.TableLayoutPanel4.Controls.Add(Me.Label6, 0, 0)
             Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
             Me.TableLayoutPanel4.Location = New System.Drawing.Point(3, 20)
@@ -335,18 +353,30 @@
             Me.TableLayoutPanel4.Size = New System.Drawing.Size(437, 89)
             Me.TableLayoutPanel4.TabIndex = 0
             '
-            'BtnJoyStickExtend
+            'BtnLocksRet
             '
-            Me.BtnJoyStickExtend.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.BtnJoyStickExtend.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-            Me.BtnJoyStickExtend.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-            Me.BtnJoyStickExtend.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.BtnJoyStickExtend.Location = New System.Drawing.Point(148, 3)
-            Me.BtnJoyStickExtend.Name = "BtnJoyStickExtend"
-            Me.BtnJoyStickExtend.Size = New System.Drawing.Size(286, 83)
-            Me.BtnJoyStickExtend.TabIndex = 25
-            Me.BtnJoyStickExtend.Text = "Extend"
-            Me.BtnJoyStickExtend.UseVisualStyleBackColor = True
+            Me.BtnLocksRet.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.BtnLocksRet.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+            Me.BtnLocksRet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+            Me.BtnLocksRet.Location = New System.Drawing.Point(293, 3)
+            Me.BtnLocksRet.Name = "BtnLocksRet"
+            Me.BtnLocksRet.Size = New System.Drawing.Size(141, 83)
+            Me.BtnLocksRet.TabIndex = 31
+            Me.BtnLocksRet.Text = "Up"
+            Me.BtnLocksRet.UseVisualStyleBackColor = True
+            '
+            'BtnLocksExtend
+            '
+            Me.BtnLocksExtend.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.BtnLocksExtend.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+            Me.BtnLocksExtend.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+            Me.BtnLocksExtend.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.BtnLocksExtend.Location = New System.Drawing.Point(148, 3)
+            Me.BtnLocksExtend.Name = "BtnLocksExtend"
+            Me.BtnLocksExtend.Size = New System.Drawing.Size(139, 83)
+            Me.BtnLocksExtend.TabIndex = 25
+            Me.BtnLocksExtend.Text = "Extend"
+            Me.BtnLocksExtend.UseVisualStyleBackColor = True
             '
             'Label6
             '
@@ -356,7 +386,7 @@
             Me.Label6.Name = "Label6"
             Me.Label6.Size = New System.Drawing.Size(139, 18)
             Me.Label6.TabIndex = 24
-            Me.Label6.Text = "Joy Stick Actuate"
+            Me.Label6.Text = "Part Locks Actuate"
             '
             'GroupBox1
             '
@@ -503,21 +533,6 @@
             Me.BtnClampUp.Text = "Up"
             Me.BtnClampUp.UseVisualStyleBackColor = True
             '
-            'BtnNestCls
-            '
-            Me.BtnNestCls.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-            Me.BtnNestCls.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-            Me.BtnNestCls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-            Me.BtnNestCls.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.BtnNestCls.Location = New System.Drawing.Point(293, 113)
-            Me.BtnNestCls.Name = "BtnNestCls"
-            Me.BtnNestCls.Size = New System.Drawing.Size(141, 49)
-            Me.BtnNestCls.TabIndex = 31
-            Me.BtnNestCls.Text = "Closed"
-            Me.BtnNestCls.UseVisualStyleBackColor = True
-            '
             'TesterDevicesUserControl
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -563,7 +578,7 @@
         Friend WithEvents Label3 As Label
         Friend WithEvents GroupBox4 As GroupBox
         Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
-        Friend WithEvents BtnJoyStickExtend As Button
+        Friend WithEvents BtnLocksExtend As Button
         Friend WithEvents Label6 As Label
         Friend WithEvents Label1 As Label
         Friend WithEvents Label5 As Label
@@ -579,5 +594,6 @@
         Friend WithEvents BtnGi As Button
         Friend WithEvents Label9 As Label
         Friend WithEvents BtnNestCls As Button
+        Friend WithEvents BtnLocksRet As Button
     End Class
 End Namespace

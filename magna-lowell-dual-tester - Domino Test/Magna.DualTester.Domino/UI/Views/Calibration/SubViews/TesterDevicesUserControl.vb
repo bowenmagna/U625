@@ -11,9 +11,9 @@ Namespace UI.Views.Calibration.SubViews
         Private Const Pcode As String = "Pcode"
         Private Const ColorCmds As String = "ColorCmds"
         Const Pulltest = "PullTest"
-        Const JoyStick = "Joystick"
+        ' Const JoyStick = "Joystick"
         Const TrapDoor = "TrapDoorProbe"
-        'Private Const Tooling As String = "Tooling"
+        Private Const Tooling As String = "Tooling"
         'Private Const CameraItems As String = "CameraItems"
         'Private Const MirrrorActuator As String = "MirrrorActuator"
 
@@ -60,11 +60,13 @@ Namespace UI.Views.Calibration.SubViews
         '    End If
         'End Sub
 
-        Private Sub Btn_MouseDown(sender As Object, e As EventArgs) Handles BtnNestCls.MouseDown, BtnNestOpen.MouseDown, BtnGi.MouseDown
+        Private Sub Btn_MouseDown(sender As Object, e As EventArgs) Handles BtnNestCls.MouseDown, BtnNestOpen.MouseDown, BtnGi.MouseDown, BtnLocksExtend.MouseDown
             If sender Is BtnNestOpen Then
-                RaiseSaved(GetManualAddr("Clamps"), (_data.ManualOps.Clamps Or 2))
+                RaiseSaved(GetManualAddr(Clamps), (_data.ManualOps.Clamps Or 2))
             ElseIf sender Is BtnNestCls Then
-                RaiseSaved(GetManualAddr("Clamps"), (_data.ManualOps.Clamps Or 1))
+                RaiseSaved(GetManualAddr(Clamps), (_data.ManualOps.Clamps Or 1))
+                'ElseIf sender Is BtnLocksExtend Then
+                '    RaiseSaved(GetManualAddr(Tooling), (_data.ManualOps.Tooling Or 1))
             ElseIf sender Is BtnGi Then
                 RaiseSaved(GetManualAddr("Gi"), (_data.ManualOps.Gi Or 2))
 
@@ -157,13 +159,13 @@ Namespace UI.Views.Calibration.SubViews
 
 #Region "Joy Stick"
 
-        Private Sub BtnJoyStickExtend_MouseDown(sender As Object, e As MouseEventArgs) Handles BtnJoyStickExtend.MouseDown
-            RaiseSaved(GetManualAddr(JoyStick), _data.ManualOps.JoyStick Or 1)
-        End Sub
+        'Private Sub BtnJoyStickExtend_MouseDown(sender As Object, e As MouseEventArgs) Handles BtnLocksExtend.MouseDown
+        '    RaiseSaved(GetManualAddr(JoyStick), _data.ManualOps.JoyStick Or 1)
+        'End Sub
 
-        Private Sub BtnJoyStickExtend_MouseUp(sender As Object, e As MouseEventArgs) Handles BtnJoyStickExtend.MouseUp
-            RaiseSaved(GetManualAddr(JoyStick), _data.ManualOps.JoyStick And Not 1)
-        End Sub
+        'Private Sub BtnJoyStickExtend_MouseUp(sender As Object, e As MouseEventArgs) Handles BtnLocksExtend.MouseUp
+        '    RaiseSaved(GetManualAddr(JoyStick), _data.ManualOps.JoyStick And Not 1)
+        'End Sub
 
 #End Region
 
@@ -208,7 +210,17 @@ Namespace UI.Views.Calibration.SubViews
             BtnColorTriggerGalaxy.Text = data.TargetColor.Value 'MainFormData.Colors.Data(_data.TargetColor).Name.ToString()
         End Sub
 
+        Private Sub BtnLocksExtend_Click(sender As Object, e As EventArgs)
 
+        End Sub
+
+        Private Sub Button1_Click(sender As Object, e As EventArgs)
+
+        End Sub
+
+        Private Sub Btn_MouseDown(sender As Object, e As MouseEventArgs)
+
+        End Sub
     End Class
 
 End Namespace

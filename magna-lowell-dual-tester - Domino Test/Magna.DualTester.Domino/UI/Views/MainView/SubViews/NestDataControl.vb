@@ -104,7 +104,7 @@ Namespace UI.Views.MainView.SubViews
             'CellMaps.Add(CargoLamp_Amp.Name, New LogItemCellMap("Cargo Lamp", CargoLamp_Amp, UnitType.Amps, GridOptionsTesting.Cell(1, 10)))
             'CellMaps.Add(PowerExt_Amp.Name, New LogItemCellMap("Power Extend", PowerExt_Amp, UnitType.Amps, GridOptionsTesting.Cell(3, 10)))
             CellMaps.Add(CurCycle.Name, New LogItemCellMap("Current Cycle", CurCycle, UnitType.Seconds, GridOptionsTesting.Cell(3, 10)))
-            CellMaps.Add(PrevCycle.Name, New LogItemCellMap("Previous Cycle", PrevCycle, UnitType.Seconds, GridOptionsTesting.Cell(4, 10)))
+            CellMaps.Add(PrevCycle.Name, New LogItemCellMap("Prev Cycle", PrevCycle, UnitType.Seconds, GridOptionsTesting.Cell(4, 10)))
             '****************************************************************************************************************
             ResizeGrid()
             Me.ResumeLayout()

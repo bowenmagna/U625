@@ -19,15 +19,19 @@
         Public Bzi_Amps As New Udt_MinMax
         Public Pfold_Amps As New Udt_MinMax
         Public Pfold_TravTime As New Udt_MinMax
-        Public MemoryVoltsPerDeg As New Udt_MinMax
+        Public LN_TS_LVDT As New Udt_MinMax
+        Public LN_GI_LVDT As New Udt_MinMax
+        Public RN_TS_LVDT As New Udt_MinMax
+        Public RN_GI_LVDT As New Udt_MinMax
+        ''   Public MemoryVoltsPerDeg As New Udt_MinMax
         Public EcAmps As New Udt_MinMax
-        Public Cargo_Lamp_Amps As New Udt_MinMax
-        Public Oats_Amps As New Udt_MinMax
-        Public PowerExt_Amps As New Udt_MinMax
-        Public PowerExt_TravTime As New Udt_MinMax
+        ''    Public Cargo_Lamp_Amps As New Udt_MinMax
+        ''    Public Oats_Amps As New Udt_MinMax
+        ''     Public PowerExt_Amps As New Udt_MinMax
+        ''     Public PowerExt_TravTime As New Udt_MinMax
         Public Camera_Amps As New Udt_MinMax
-        Public Gps_Amps As New Udt_MinMax
-        Public Ca_Amps As New Udt_MinMax
+        ''        Public Gps_Amps As New Udt_MinMax
+        ''    Public Ca_Amps As New Udt_MinMax
         Public Police_Mod As New Udt_MinMax
     End Class
 
