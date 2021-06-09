@@ -18,7 +18,7 @@ Public Class PnAndQtyEdit
     '''
     ''' </summary>
     ''' <param name="title">Concatenated into the title of the dialog box to look like "Editing [title]"</param>
-    ''' <param name="Pn">Part Number Line is Tester is currently Running</param>
+    ''' <param name="PnNest1">Part Number Line is Tester is currently Running</param>
     ''' <param name="currentValue"></param>
     ''' <remarks></remarks>
     Public Sub New(title As String, currentValue As Integer, user As User, PnNest1 As String, PnNest2 As String, msgsvc As IMessageAlertService)

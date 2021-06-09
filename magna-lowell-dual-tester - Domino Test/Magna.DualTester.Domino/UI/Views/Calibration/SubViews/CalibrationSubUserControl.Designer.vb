@@ -29,6 +29,10 @@ Namespace UI.Views.Calibration.SubViews
             Me.Label22 = New System.Windows.Forms.Label()
             Me.Panel1 = New System.Windows.Forms.Panel()
             Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+            Me.LblTS = New System.Windows.Forms.Label()
+            Me.LblTsLVDT = New System.Windows.Forms.Label()
+            Me.LblGiLvdt = New System.Windows.Forms.Label()
+            Me.LabelGi = New System.Windows.Forms.Label()
             Me.LblVMem = New System.Windows.Forms.Label()
             Me.Label7 = New System.Windows.Forms.Label()
             Me.LblVmemValue = New System.Windows.Forms.Label()
@@ -146,6 +150,10 @@ Namespace UI.Views.Calibration.SubViews
             Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332!))
             Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
             Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+            Me.TableLayoutPanel1.Controls.Add(Me.LblTS, 2, 15)
+            Me.TableLayoutPanel1.Controls.Add(Me.LblTsLVDT, 1, 15)
+            Me.TableLayoutPanel1.Controls.Add(Me.LblGiLvdt, 1, 14)
+            Me.TableLayoutPanel1.Controls.Add(Me.LabelGi, 2, 14)
             Me.TableLayoutPanel1.Controls.Add(Me.LblVMem, 2, 5)
             Me.TableLayoutPanel1.Controls.Add(Me.Label7, 0, 5)
             Me.TableLayoutPanel1.Controls.Add(Me.LblVmemValue, 0, 5)
@@ -192,9 +200,10 @@ Namespace UI.Views.Calibration.SubViews
             Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
             Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
             Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-            Me.TableLayoutPanel1.RowCount = 14
+            Me.TableLayoutPanel1.RowCount = 16
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
@@ -210,6 +219,62 @@ Namespace UI.Views.Calibration.SubViews
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
             Me.TableLayoutPanel1.Size = New System.Drawing.Size(377, 385)
             Me.TableLayoutPanel1.TabIndex = 0
+            '
+            'LblTS
+            '
+            Me.LblTS.AutoSize = True
+            Me.LblTS.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.LblTS.Location = New System.Drawing.Point(253, 443)
+            Me.LblTS.Margin = New System.Windows.Forms.Padding(3)
+            Me.LblTS.Name = "LblTS"
+            Me.LblTS.Size = New System.Drawing.Size(121, 22)
+            Me.LblTS.TabIndex = 60
+            Me.LblTS.Text = "TS LVDT"
+            Me.LblTS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+            '
+            'LblTsLVDT
+            '
+            Me.LblTsLVDT.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Me.LblTsLVDT.AutoSize = True
+            Me.LblTsLVDT.BackColor = System.Drawing.Color.Black
+            Me.LblTsLVDT.ForeColor = System.Drawing.Color.White
+            Me.LblTsLVDT.Location = New System.Drawing.Point(128, 443)
+            Me.LblTsLVDT.Margin = New System.Windows.Forms.Padding(3)
+            Me.LblTsLVDT.Name = "LblTsLVDT"
+            Me.LblTsLVDT.Size = New System.Drawing.Size(119, 22)
+            Me.LblTsLVDT.TabIndex = 59
+            Me.LblTsLVDT.Text = "0"
+            Me.LblTsLVDT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            '
+            'LblGiLvdt
+            '
+            Me.LblGiLvdt.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Me.LblGiLvdt.AutoSize = True
+            Me.LblGiLvdt.BackColor = System.Drawing.Color.Black
+            Me.LblGiLvdt.ForeColor = System.Drawing.Color.White
+            Me.LblGiLvdt.Location = New System.Drawing.Point(128, 415)
+            Me.LblGiLvdt.Margin = New System.Windows.Forms.Padding(3)
+            Me.LblGiLvdt.Name = "LblGiLvdt"
+            Me.LblGiLvdt.Size = New System.Drawing.Size(119, 22)
+            Me.LblGiLvdt.TabIndex = 58
+            Me.LblGiLvdt.Text = "0"
+            Me.LblGiLvdt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            '
+            'LabelGi
+            '
+            Me.LabelGi.AutoSize = True
+            Me.LabelGi.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.LabelGi.Location = New System.Drawing.Point(253, 415)
+            Me.LabelGi.Margin = New System.Windows.Forms.Padding(3)
+            Me.LabelGi.Name = "LabelGi"
+            Me.LabelGi.Size = New System.Drawing.Size(121, 22)
+            Me.LabelGi.TabIndex = 57
+            Me.LabelGi.Text = " GI LVDT"
+            Me.LabelGi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
             '
             'LblVMem
             '
@@ -1093,5 +1158,9 @@ Namespace UI.Views.Calibration.SubViews
         Private WithEvents LblVMem As Label
         Friend WithEvents Label7 As Label
         Friend WithEvents LblVmemValue As Label
+        Private WithEvents LabelGi As Label
+        Private WithEvents LblTS As Label
+        Friend WithEvents LblTsLVDT As Label
+        Friend WithEvents LblGiLvdt As Label
     End Class
 End Namespace

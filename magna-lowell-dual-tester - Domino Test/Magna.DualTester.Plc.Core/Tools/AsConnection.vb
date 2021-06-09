@@ -63,7 +63,7 @@ Namespace Tools
         Private ReadOnly _cfg As IPlcCfgFactory
         Private ReadOnly _messageAlert As IPlcAlertService
         Private ReadOnly _astest As IAsTest
-        Dim logger As NLog.Logger = LogManager.GetCurrentClassLogger()
+        Dim logger As nlog.logger = LogManager.GetCurrentClassLogger()
 
         ''' <summary>
         ''' This sub initializes all the main components for reading the plc.

@@ -45,7 +45,8 @@
         "dependencies": {
           "Magna.DualTester.Core": "1.0.0",
           "NLog": "4.4.12",
-          "NLog.Config": "4.4.12"
+          "NLog.Config": "4.4.12",
+          "Ninject": "3.2.2"
         },
         "compile": {
           "bin/placeholder/Magna.DualTester.Plc.Core.dll": {}
@@ -99,7 +100,8 @@
         "dependencies": {
           "Magna.DualTester.Core": "1.0.0",
           "NLog": "4.4.12",
-          "NLog.Config": "4.4.12"
+          "NLog.Config": "4.4.12",
+          "Ninject": "3.2.2"
         },
         "compile": {
           "bin/placeholder/Magna.DualTester.Plc.Core.dll": {}
@@ -153,7 +155,8 @@
         "dependencies": {
           "Magna.DualTester.Core": "1.0.0",
           "NLog": "4.4.12",
-          "NLog.Config": "4.4.12"
+          "NLog.Config": "4.4.12",
+          "Ninject": "3.2.2"
         },
         "compile": {
           "bin/placeholder/Magna.DualTester.Plc.Core.dll": {}
@@ -207,7 +210,8 @@
         "dependencies": {
           "Magna.DualTester.Core": "1.0.0",
           "NLog": "4.4.12",
-          "NLog.Config": "4.4.12"
+          "NLog.Config": "4.4.12",
+          "Ninject": "3.2.2"
         },
         "compile": {
           "bin/placeholder/Magna.DualTester.Plc.Core.dll": {}
@@ -308,24 +312,30 @@
       "Magna.DualTester.Core >= 1.0.0",
       "Magna.DualTester.Plc.Core >= 1.0.0",
       "NLog >= 4.4.12",
+      "NLog.Config >= 4.4.12",
       "Ninject >= 3.2.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\e40253.MAGNA\\.nuget\\packages\\": {}
+    "C:\\Users\\e40253\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Domino\\Magna.DualTester.Domino.vbproj",
+      "projectUniqueName": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Domino\\Magna.DualTester.Domino.vbproj",
       "projectName": "Magna.DualTester.Domino",
-      "projectPath": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Domino\\Magna.DualTester.Domino.vbproj",
-      "packagesPath": "C:\\Users\\e40253.MAGNA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Domino\\obj\\",
+      "projectPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Domino\\Magna.DualTester.Domino.vbproj",
+      "packagesPath": "C:\\Users\\e40253\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Domino\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\e40253.MAGNA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\e40253\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -333,16 +343,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "E:\\Cloud\\OneDrive\\Documents\\Visual Studio 2019\\FT-MBSV-NET-ALL-2.7.2\\fieldtalk": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net46": {
           "projectReferences": {
-            "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj": {
-              "projectPath": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj"
+            "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj": {
+              "projectPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj"
             },
-            "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj": {
-              "projectPath": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj"
+            "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj": {
+              "projectPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj"
             }
           }
         }
@@ -352,6 +363,10 @@
       "net46": {
         "dependencies": {
           "NLog": {
+            "target": "Package",
+            "version": "[4.4.12, )"
+          },
+          "NLog.Config": {
             "target": "Package",
             "version": "[4.4.12, )"
           },

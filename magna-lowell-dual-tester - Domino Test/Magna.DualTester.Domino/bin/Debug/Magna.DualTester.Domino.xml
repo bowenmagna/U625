@@ -291,7 +291,7 @@ Magna.DualTester.Domino
 
  </summary>
  <param name="title">Concatenated into the title of the dialog box to look like "Editing [title]"</param>
- <param name="Pn">Part Number Line is Tester is currently Running</param>
+ <param name="PnNest1">Part Number Line is Tester is currently Running</param>
  <param name="currentValue"></param>
  <remarks></remarks>
 </member>

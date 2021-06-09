@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj": {}
+  },
+  "projects": {
+    "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj": {
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj",
+        "projectName": "Magna.DualTester.Core",
+        "projectPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj"
+      },
+      "frameworks": {
+        "net46": {}
+      }
+    },
+    "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj",
+        "projectName": "Magna.DualTester.Plc.Core",
+        "projectPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj",
+        "packagesPath": "C:\\Users\\e40253\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\e40253\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Cloud\\OneDrive\\Documents\\Visual Studio 2019\\FT-MBSV-NET-ALL-2.7.2\\fieldtalk": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {
+              "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj": {
+                "projectPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.4.12, )"
+            },
+            "NLog.Config": {
+              "target": "Package",
+              "version": "[4.4.12, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.2.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

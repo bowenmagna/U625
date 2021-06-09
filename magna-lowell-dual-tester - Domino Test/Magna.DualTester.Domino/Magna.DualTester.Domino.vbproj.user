@@ -11,10 +11,10 @@
   </PropertyGroup>
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
-    <PublishUrlHistory>\\malmsapp10\prod\Source Code\NEWU625RHDomino\|C:\Users\e40253.MAGNA\Desktop\Publish\</PublishUrlHistory>
+    <PublishUrlHistory>F:\Source Code\U625\|\\malmsapp10\prod\Source Code\NEWU625RHDomino\|C:\Users\e40253.MAGNA\Desktop\Publish\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory />
-    <UpdateUrlHistory>\\malmsapp10\prod\Source Code\NEWDomino\</UpdateUrlHistory>
+    <UpdateUrlHistory>\\malmsapp10\prod\Source Code\NEWU625RHDomino\|\\malmsapp10\prod\Source Code\NEWDomino\</UpdateUrlHistory>
     <BootstrapperUrlHistory />
     <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>

@@ -20,6 +20,8 @@
         Public Gps_Amp As New Udt_AlgItem
         Public Ca_Amp As New Udt_AlgItem
         Public Police_Wire As New Udt_AlgItem
+        Public GI_LVDT As New Udt_AlgItem
+        Public TS_LVDT As New Udt_AlgItem
         ' Public Pol_Sync As New Udt_AlgItem
         Public Nest As Integer
     End Class

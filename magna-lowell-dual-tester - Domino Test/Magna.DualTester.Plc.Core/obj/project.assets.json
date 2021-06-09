@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6": {
+      "Ninject/3.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/Ninject.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/Ninject.dll": {}
+        }
+      },
       "NLog/4.4.12": {
         "type": "package",
         "compile": {
@@ -32,6 +41,15 @@
       }
     },
     ".NETFramework,Version=v4.6/win": {
+      "Ninject/3.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/Ninject.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/Ninject.dll": {}
+        }
+      },
       "NLog/4.4.12": {
         "type": "package",
         "compile": {
@@ -62,6 +80,15 @@
       }
     },
     ".NETFramework,Version=v4.6/win-x64": {
+      "Ninject/3.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/Ninject.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/Ninject.dll": {}
+        }
+      },
       "NLog/4.4.12": {
         "type": "package",
         "compile": {
@@ -92,6 +119,15 @@
       }
     },
     ".NETFramework,Version=v4.6/win-x86": {
+      "Ninject/3.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/Ninject.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/Ninject.dll": {}
+        }
+      },
       "NLog/4.4.12": {
         "type": "package",
         "compile": {
@@ -123,6 +159,35 @@
     }
   },
   "libraries": {
+    "Ninject/3.2.2": {
+      "sha512": "vDyKaDZ1RgmPxD87u3om3La34r4RHBZfap3tCsJtUbSGkIWjQJ8La1s61BR/C0LgO1+3xGEC6UfI7D594MNl5Q==",
+      "type": "package",
+      "path": "ninject/3.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Ninject.dll",
+        "lib/net35/Ninject.xml",
+        "lib/net40/Ninject.dll",
+        "lib/net40/Ninject.xml",
+        "lib/net45-full/Ninject.dll",
+        "lib/net45-full/Ninject.xml",
+        "lib/sl2/Ninject.dll",
+        "lib/sl2/Ninject.xml",
+        "lib/sl3-wp/Ninject.dll",
+        "lib/sl3-wp/Ninject.xml",
+        "lib/sl3/Ninject.dll",
+        "lib/sl3/Ninject.xml",
+        "lib/sl4-windowsphone71/Ninject.dll",
+        "lib/sl4-windowsphone71/Ninject.xml",
+        "lib/sl4/Ninject.dll",
+        "lib/sl4/Ninject.xml",
+        "lib/sl5/Ninject.dll",
+        "lib/sl5/Ninject.xml",
+        "ninject.3.2.2.nupkg.sha512",
+        "ninject.nuspec"
+      ]
+    },
     "NLog/4.4.12": {
       "sha512": "fODew3BFT2XhAuqhGo2ZYT9OJE0ciGEBfvKXOmAAvaDsP/3ROIf083p8QUnmwKKw4jCkVW06ObX6gn/eFi2Skg==",
       "type": "package",
@@ -179,24 +244,30 @@
     ".NETFramework,Version=v4.6": [
       "Magna.DualTester.Core >= 1.0.0",
       "NLog >= 4.4.12",
-      "NLog.Config >= 4.4.12"
+      "NLog.Config >= 4.4.12",
+      "Ninject >= 3.2.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\e40253.MAGNA\\.nuget\\packages\\": {}
+    "C:\\Users\\e40253\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj",
+      "projectUniqueName": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj",
       "projectName": "Magna.DualTester.Plc.Core",
-      "projectPath": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj",
-      "packagesPath": "C:\\Users\\e40253.MAGNA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\obj\\",
+      "projectPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\Magna.DualTester.Plc.Core.vbproj",
+      "packagesPath": "C:\\Users\\e40253\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Plc.Core\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\e40253.MAGNA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\e40253\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -204,13 +275,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "E:\\Cloud\\OneDrive\\Documents\\Visual Studio 2019\\FT-MBSV-NET-ALL-2.7.2\\fieldtalk": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net46": {
           "projectReferences": {
-            "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj": {
-              "projectPath": "C:\\Users\\e40253.MAGNA\\source\\repos\\U625_RH\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj"
+            "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj": {
+              "projectPath": "D:\\GitHub\\U625\\magna-lowell-dual-tester - Domino Test\\Magna.DualTester.Core\\Magna.DualTester.Core.vbproj"
             }
           }
         }
@@ -226,6 +298,10 @@
           "NLog.Config": {
             "target": "Package",
             "version": "[4.4.12, )"
+          },
+          "Ninject": {
+            "target": "Package",
+            "version": "[3.2.2, )"
           }
         }
       }

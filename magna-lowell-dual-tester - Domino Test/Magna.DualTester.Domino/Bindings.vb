@@ -4,6 +4,7 @@ Imports Magna.DualTester.Domino.TesterApi
 Imports Magna.DualTester.Plc.Core
 Imports Magna.DualTester.Plc.Core.Tools
 
+
 Public Class Bindings
     Inherits Ninject.Modules.NinjectModule
 

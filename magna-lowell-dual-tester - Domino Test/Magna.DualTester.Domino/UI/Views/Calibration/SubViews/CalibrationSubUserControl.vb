@@ -14,6 +14,12 @@ Namespace UI.Views.Calibration.SubViews
         Private Const Pfold = "Pfold"
         Private Const HorzAngle = "HorzAngle"
         Private Const VertAngle = "VertAngle"
+
+        Private ReadOnly Property _isTechOrBetter As Boolean
+            Get
+                Return CBool(_tmpuser?.AccessLevel >= AccessLevel.Tech)
+            End Get
+        End Property
         Private ReadOnly Property _isEngieOrBetter As Boolean
             Get
                 Return CBool(_tmpuser?.AccessLevel >= AccessLevel.Engineer)
@@ -251,12 +257,11 @@ Namespace UI.Views.Calibration.SubViews
                         LblHeaterRaw.Text = .DefogAmp.AnalogInDint.ToString()
                         LblTurnSigValue.Text = .Ts_Amp.Value.ToString() + " A"
                         LblTurnSigRaw.Text = .Ts_Amp.AnalogInDint.ToString()
+                        LblTsLVDT.Text = .TS_LVDT.AnalogInDint.ToString()
                         'LblGiValue.Text = .Gi_Amp.Value.ToString() + " A"
                         'LblGiRaw.Text = .Gi_Amp.AnalogInDint.ToString()
                         LblPfoldValue.Text = .Pf_Amp.Value.ToString() + " A"
                         LblPfoldRaw.Text = .Pf_Amp.AnalogInDint.ToString()
-
-
 
                         LblBziVal.Text = .Bzi_Amp.Value.ToString()
                         LblBziRaw.Text = .Bzi_Amp.AnalogInDint.ToString()
@@ -266,6 +271,7 @@ Namespace UI.Views.Calibration.SubViews
 
                         LblGiValue.Text = .Gi_Amp.Value.ToString()
                         LblGiRaw.Text = .Gi_Amp.AnalogInDint.ToString()
+                        LblGiLvdt.Text = .GI_LVDT.AnalogInDint.ToString()
 
                         LblCargoLampValue.Text = .CargoLamp_Amp.Value.ToString()
                         LblCargoLampRaw.Text = .CargoLamp_Amp.AnalogInDint.ToString()
@@ -285,22 +291,22 @@ Namespace UI.Views.Calibration.SubViews
                         'BtnHorzAmp.Enabled = compair(.HorzAmp.AnalogInDint, .HorzAmp.MinRawCalDeflect)
                         'BtnVertAmp.Enabled = compair(.VertAmp.AnalogInDint, .VertAmp.MinRawCalDeflect)
 
-                        BtnHeater.Enabled = _isAdminOrBetter 'compair(.DefogAmp.AnalogInDint, .DefogAmp.MinRawCalDeflect) AndAlso _isEngieOrBetter
-                        BtnTurnSig.Enabled = _isAdminOrBetter 'compair(.Ts_Amp.AnalogInDint, .Ts_Amp.MinRawCalDeflect) AndAlso _isEngieOrBetter
-                        BtnGi.Enabled = _isAdminOrBetter 'compair(.Gi_Amp.AnalogInDint, .Gi_Amp.MinRawCalDeflect) AndAlso _isEngieOrBetter
-                        BtnPFold.Enabled = _isAdminOrBetter 'compair(.Pf_Amp.AnalogInDint, .Pf_Amp.MinRawCalDeflect) AndAlso _isEngieOrBetter
-                        BtnBzi.Enabled = _isAdminOrBetter 'compair(.Bzi_Amp.AnalogInDint, .Bzi_Amp.MinRawCalDeflect) AndAlso _isEngieOrBetter
+                        BtnHeater.Enabled = _isTechOrBetter 'compair(.DefogAmp.AnalogInDint, .DefogAmp.MinRawCalDeflect) AndAlso _isEngieOrBetter
+                        BtnTurnSig.Enabled = _isTechOrBetter 'compair(.Ts_Amp.AnalogInDint, .Ts_Amp.MinRawCalDeflect) AndAlso _isEngieOrBetter
+                        BtnGi.Enabled = _isTechOrBetter 'compair(.Gi_Amp.AnalogInDint, .Gi_Amp.MinRawCalDeflect) AndAlso _isEngieOrBetter
+                        BtnPFold.Enabled = _isTechOrBetter 'compair(.Pf_Amp.AnalogInDint, .Pf_Amp.MinRawCalDeflect) AndAlso _isEngieOrBetter
+                        BtnBzi.Enabled = _isTechOrBetter 'compair(.Bzi_Amp.AnalogInDint, .Bzi_Amp.MinRawCalDeflect) AndAlso _isEngieOrBetter
                         'BtnPullPosition.Enabled = compair(.GlassPull.AnalogInDint, .GlassPull.MinRawCalDeflect) AndAlso _isEngieOrBetter
                         'BtnPullPosition.Enabled = .GlassPull.AnalogInDint >= .GlassPull.MinRawCalDeflect AndAlso .GlassPull.MinRawCalDeflect > 0 AndAlso lvlEngie
 
                         MirrorTraining.UpdateViewModel(New UcCoordinateViewModel(_vm))
 
                     End With
-                    BtnHorzAmp.Enabled = _isAdminOrBetter
-                    BtnVertAmp.Enabled = _isAdminOrBetter
-                    ChkPfoldPower.Enabled = _isAdminOrBetter
-                    ChkHorizPwr.Enabled = _isAdminOrBetter
-                    ChkVerAmpPower.Enabled = _isAdminOrBetter
+                    BtnHorzAmp.Enabled = _isTechOrBetter
+                    BtnVertAmp.Enabled = _isTechOrBetter
+                    ChkPfoldPower.Enabled = _isTechOrBetter
+                    ChkHorizPwr.Enabled = _isTechOrBetter
+                    ChkVerAmpPower.Enabled = _isTechOrBetter
                     ChkPfoldPower.Checked = CBool(_vm.ManualOps.Pfold And 1)
                     ChkHorizPwr.Checked = CBool(_vm.ManualOps.MirrrorActuator And 4)
                     ChkVerAmpPower.Checked = CBool(_vm.ManualOps.MirrrorActuator And 1)
